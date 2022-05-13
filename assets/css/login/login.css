@@ -1,0 +1,57 @@
+.login {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.login-container {
+    display:flex;
+    justify-content: center;
+}
+
+.login-container > form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 100%;
+}
+
+.login-container .input-container > .input-message-error {
+    margin-left: 15%;
+    max-width: 65%;
+}
+
+.login-input {
+    width: 70%;
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 1rem;
+    border: none;
+    box-shadow: 0px 2px 5px 0px rgba(110,110,110,0.75);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(110,110,110,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(110,110,110,0.75);
+    align-self: center;
+}
+
+.login-container .btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .login-container > form {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .login-container > form {
+        width: 40%;
+    }
+
+    .login-container .btn {
+        width: 70%;
+    }
+}

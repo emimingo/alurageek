@@ -1,0 +1,55 @@
+.all-products {
+    padding-top: 2rem;
+}
+
+.all-products .container {
+    margin: .5rem;
+} 
+
+.all-products .products-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.products-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+}
+
+.all-products .products-card {
+    margin-top: -1.5rem;
+}
+
+.delete-icons, .edit-icons {
+    position: relative;
+    top: 3rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.delete-icons:hover, .edit-icons:hover {
+    color: #2A7AE4;
+}
+
+.delete-icons{
+    background: transparent;
+    border: none;
+}
+
+.products-img {
+    min-width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .all-products .products-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

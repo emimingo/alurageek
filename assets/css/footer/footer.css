@@ -1,0 +1,35 @@
+.footer{
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    gap: .5rem;
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+
+  }
+  
+  .footer a{
+    text-decoration: none;
+    color: #464646;
+  }
+  
+  .footer .social{
+    margin-top: 1px;
+    opacity: 0.4;
+  }
+  
+
+  @media screen and (min-width: 1024px) {
+    .footer .social:hover{
+      opacity: 1;
+    } 
+
+    .footer a:hover{
+      color:rgba(0, 0, 0, 1);
+    }
+}

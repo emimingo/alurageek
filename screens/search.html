@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/header/header.css">
+    <link rel="stylesheet" href="../assets/css/banner/banner.css">
+    <link rel="stylesheet" href="../assets/css/products/products.css">
+    <link rel="stylesheet" href="../assets/css/contact/contact.css">
+    <link rel="stylesheet" href="../assets/css/footer/footer.css">
+
+    <title>AluraGeek - Search</title>
+</head>
+<body>
+    
+<header class="header">
+    <div class="container">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/alurageek/index.html">
+                    <h1>
+                        <img class="header-icon1" src="../assets/images/logo.svg" alt="logo AluraGeek">
+                        <img class="header-icon2" src="../assets/images/alura.svg" alt="alura image">
+                        <img class="header-icon2" src="../assets/images/geek.svg" alt="geek image">
+                    </h1>
+                </a>
+            </div>
+            
+            <div class="header-search">
+                <input class="header-input--search" id="search" type="text" name="input-search" placeholder="¿Qué deseas buscar?">
+                <i class="fa fa-magnifying-glass header-lens"></i>
+            </div>
+            
+            <div class="header-login">
+                <a href="../screens/login.html"><button class="header-btn-login" type="submit">Login</button></a>
+                <span class="login-info no-display"></span>
+                <button class="btn btn-cerrar-sesion no-display" type="submit">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    
+<div class="productos">
+    <section class="busqueda">
+        <div class="container">
+            <div class="products-category">
+                <div class="products-header">
+                    <h2>Resultados de la búsqueda:</h2>
+                </div>
+                <div class="products-container"></div>
+            </div>
+
+        </div>
+    </section>
+</div>
+    
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="header-logo contact-logo">
+                        <h1>
+                            <img class="header-icon1" src="../assets/images/logo.svg" alt="logo AluraGeek">
+                            <img class="header-icon2" src="../assets/images/alura.svg" alt="alura image">
+                            <img class="header-icon2" src="../assets/images/geek.svg" alt="geek image">
+                        </h1>
+                </div>
+                <div class="contact-links">
+                    <ul class="contact-links--list">
+                        <li>Quienes somos</li>
+                        <li>Política de privacidad</li>
+                        <li>Programa de fidelidad</li>
+                        <li>Nuestras Tiendas</li>
+                        <li>Quiero ser franquiciado</li>
+                        <li>Anuncie aquí</li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form class="form-contact" action="">
+                        <h4>Hable con nosotros</h4>
+                        <div class="input-container">
+                            <input class = "form-input input-contact" type="text" name="" id="name" placeholder="Nombre" required pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.´'-]+$" data-tipo="nombre" maxlength="40">
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="input-container">
+                            <textarea class = "form-textarea input-contact" name="" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje" required data-tipo="mensaje" maxlength="120"></textarea>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <button class="btn button-submit button-submit-contact button-disabled" disabled>Enviar Mensaje</button>
+                    </form>    
+                </div>
+
+            </div>
+        </div>    
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/wenceslaojanda/" target="_blank">
+        <img src="../assets/images/footer/icon-linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="social">
+      <a href="https://github.com/wenceslaojanda" target="_blank">
+        <img src="../assets/images/footer/icon-github.svg" alt="GitHub">
+      </a>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/wenceslaojanda" target="_blank">
+        <img src="../assets/images/footer/icon-instagram.svg" alt="Instagram">
+      </a>
+    </div>
+    <div><a href="mailto:wenchojanda@gmail.com">&copy;Wenceslao Janda</a></div>
+  </footer>
+
+  <script src="../app/app.js" type="module"></script>
+  <script type="module" src="../controllers/search-controller.js"></script>
+</body>
+</html>

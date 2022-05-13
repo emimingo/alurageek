@@ -1,0 +1,75 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    min-height: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #E5E5E5;
+    min-height: 100%;
+    margin-bottom: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.7rem;
+    font-family: 'raleway';
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+.btn {
+    padding: .8rem 1rem;
+    background: #2A7AE4;
+    margin: .5rem 0rem;
+    border: none;
+    color: #FFFFFF;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.button-disabled {
+    background-color: #E5E5E5;
+}
+
+.no-display {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+.login-info{
+    align-self: center;
+    margin-right: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+}
+
